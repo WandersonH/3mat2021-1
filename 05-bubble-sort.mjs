@@ -51,12 +51,25 @@ let totTrocas, comps, pass
  console.log('Depois:', nums)
  console.log(totTrocas, comps, pass)
 
+ //ordenando vetor string simples externo
+
  import { empresas } from './includes/15-mil-empresas.mjs'
 
 console.log('Antes', empresas)
 console.time('ordenando empresas')
- bubbleSort(empresas)
- console.timeEnd('ordenando empresas')
- console.log('Depois:', empresas)
- console.log(totTrocas, comps, pass)
+bubbleSort(empresas)
+console.timeEnd('ordenando empresas')
+console.log('Depois:', empresas)
+console.log({totTrocas, comps, pass})
+
+
+console.log('-----------------100 mil nomes')
  
+ import { nomes } from './includes/100-mil-nomes.mjs'
+
+console.log('Antes', nomes)
+console.time('ordenando nomes')
+bubbleSort(nomes)
+console.timeEnd('ordenando nomes')
+console.log('Depois:', nomes)
+console.log({totTrocas, comps, pass})
