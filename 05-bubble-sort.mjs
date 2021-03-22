@@ -73,3 +73,4 @@ bubbleSort(nomes)
 console.timeEnd('ordenando nomes')
 console.log('Depois:', nomes)
 console.log({totTrocas, comps, pass})
+let memoria = process.memoryUsage().heapUsed / 1024 / 1024
